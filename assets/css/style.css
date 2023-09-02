@@ -1,0 +1,296 @@
+/* Base Style CSS Start */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+/* Colors */
+
+:root {
+  --primary-0005: #f2f2f2;
+  --secondary-periwinkle-60: #5051ae;
+  --basics-white: #ffffff;
+  --neutral-700: #555458;
+  --neutral-800: #37363b;
+  --neutral-900: #1d1c21;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  scroll-behavior: smooth;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Base Style CSS End */
+
+/* ==============***==============
+Email Invitation Page CSS
+==============***============== */
+
+.email-invitation-body {
+  background: var(--primary-0005);
+}
+
+/* Email Invitation Section CSS Start */
+
+.email-invitaion-container {
+  max-width: 580px;
+  width: 100%;
+  margin: auto;
+  padding: 32px 30px 17px;
+  margin-top: 16px;
+  background: var(--basics-white, #fff);
+}
+
+.email-invitation-logo {
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.email-invitaion-content h6,
+.email-invitaion-content p,
+.email-invitaion-content span.regards {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.13px;
+  color: var(--neutral-800, #37363b);
+  margin-bottom: 15px;
+}
+
+.email-invitaion-content h6 span {
+  font-weight: 600;
+}
+
+.email-invitaion-content p a {
+  color: var(--secondary-periwinkle-60, #5051ae);
+}
+
+span.regards {
+  display: block;
+  padding: 20px 0;
+}
+
+.email-invitaion-content > a {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.13px;
+  color: var(--secondary-periwinkle-60, #5051ae);
+  padding: 15px 0 30px;
+}
+
+/* Email Invitation Section CSS End */
+
+/* ==============***==============
+Login Invitation Page CSS
+==============***============== */
+
+/* Login Section CSS Start */
+
+.login-wrapper {
+  background: url(../images/login-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 0 280px;
+}
+
+.login-container {
+  max-width: 520px;
+  margin: auto;
+  padding: 32px 24px;
+  background: var(--basics-white, #fff);
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05),
+    0px 12px 16px -4px rgba(16, 24, 40, 0.1),
+    0px 1px 0px 0px rgba(255, 255, 255, 0.6) inset;
+  border-radius: 12px;
+}
+
+.login-content .logo {
+  text-align: center;
+}
+
+.login-buttons {
+  padding-top: 32px;
+}
+
+.login-buttons a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  color: var(--neutral-800, #37363b);
+  background: #fff;
+  padding: 12px 80px;
+  margin-bottom: 12px;
+  border: 1px solid var(--neutral-200, #dcdcdb);
+  border-radius: 200px;
+}
+
+.login-buttons a img {
+  padding-right: 10px;
+}
+
+.login-buttons a:last-child {
+  margin-bottom: 0;
+}
+
+.or {
+  position: relative;
+  text-align: center;
+  padding: 26px 0 20px;
+}
+
+.or::before,
+.or::after {
+  position: absolute;
+  content: "";
+  top: 54%;
+  transform: translateY(-54%);
+  width: 45%;
+  height: 1px;
+  background: #dcdcdb;
+}
+
+.or::before {
+  left: 0;
+}
+
+.or::after {
+  right: 0;
+}
+
+.or span {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  color: var(--neutral-700, #555458);
+}
+
+.sign-in span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.16px;
+  text-align: center;
+  color: var(--neutral-900, #1d1c21);
+  padding-bottom: 16px;
+}
+
+.form-input-field {
+  width: 100%;
+}
+
+.form-input-field input {
+  width: 100%;
+  background: var(--basics-white, #fff);
+  padding: 12px 18px;
+  margin-bottom: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 200px;
+}
+
+.form-input-field input:focus {
+  outline: 0;
+}
+
+.password {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  top: 20%;
+  right: 15px;
+  cursor: pointer;
+}
+
+#eye_open {
+  display: none;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember {
+  display: flex;
+  font-size: 13px;
+  letter-spacing: 0.13px;
+  color: var(--neutral-700, #555458);
+}
+
+.remember label {
+  padding-left: 10px;
+}
+
+.forgot a {
+  font-size: 13px;
+  letter-spacing: 0.13px;
+  color: var(--secondary-periwinkle-60, #5051ae);
+}
+
+.form-submit-btn {
+  margin-top: 32px;
+}
+
+.form-submit-btn button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  color: var(--basics-white, #fff);
+  background: var(--secondary-periwinkle-60, #5051ae);
+  padding: 15px;
+  border: none;
+  border-radius: 200px;
+}
+
+.form-submit-btn button img {
+  padding-left: 24px;
+}
+
+.login-form ::-moz-placeholder {
+  font-size: 15px;
+  color: var(--neutral-400, #a7a6a8);
+}
+
+.login-form ::placeholder {
+  font-size: 15px;
+  color: var(--neutral-400, #a7a6a8);
+}
+
+/* Login Section CSS End */
