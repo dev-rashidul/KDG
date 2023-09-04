@@ -209,6 +209,10 @@ Login Invitation Page CSS
 
 .form-input-field input {
   width: 100%;
+  font-family: Manrope;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+  color: var(--neutral-800, #1d2939);
   background: var(--basics-white, #fff);
   padding: 12px 18px;
   margin-bottom: 16px;
