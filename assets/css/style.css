@@ -9,9 +9,11 @@
   --primary-0005: #f2f2f2;
   --secondary-periwinkle-60: #5051ae;
   --basics-white: #ffffff;
+  --neutral-500: #8c8c8e;
   --neutral-700: #555458;
   --neutral-800: #37363b;
   --neutral-900: #1d1c21;
+  --gray-200: #e4e7ec;
 }
 
 * {
@@ -104,7 +106,7 @@ span.regards {
 /* Email Invitation Section CSS End */
 
 /* ==============***==============
-Login Invitation Page CSS
+Login Page CSS
 ==============***============== */
 
 /* Login Section CSS Start */
@@ -207,6 +209,15 @@ Login Invitation Page CSS
   width: 100%;
 }
 
+.form-input-field label {
+  display: block;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.14px;
+  color: var(--neutral-900, #1d1c21);
+  margin-bottom: 5px;
+}
+
 .form-input-field input {
   width: 100%;
   font-family: Manrope;
@@ -272,13 +283,12 @@ Login Invitation Page CSS
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.16px;
   color: var(--basics-white, #fff);
   background: var(--secondary-periwinkle-60, #5051ae);
   padding: 15px;
+  cursor: pointer;
   border: none;
   border-radius: 200px;
 }
@@ -298,3 +308,158 @@ Login Invitation Page CSS
 }
 
 /* Login Section CSS End */
+
+/* ==============***==============
+Set Password Page CSS
+==============***============== */
+
+.set-password-bg {
+  background: var(--gray-200, #e4e7ec);
+}
+
+.set-password-container {
+  max-width: 520px;
+  margin: 60px auto;
+}
+
+.set-password-logo {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.set-password-form {
+  padding: 42px 32px;
+  background: var(--neutral-00, #fff);
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05),
+    0px 12px 16px -4px rgba(16, 24, 40, 0.1),
+    0px 1px 0px 0px rgba(255, 255, 255, 0.6) inset;
+  border-radius: 12px;
+}
+
+.set-password-form h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.16px;
+  text-align: center;
+  color: var(--neutral-900, #1d1c21);
+  padding-bottom: 20px;
+}
+
+.set-password-form > span {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.14px;
+  color: var(--neutral-900, #1d1c21);
+  padding-bottom: 20px;
+}
+
+.form-input-field span.alert {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.13px;
+  color: var(--neutral-500, #8c8c8e);
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.contact-support {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.contact-support span {
+  font-size: 13px;
+  letter-spacing: 0.14px;
+  color: var(--neutral-800, #37363b);
+}
+
+.contact-support span a {
+  font-weight: 600;
+  text-decoration-line: underline;
+  color: var(--secondary-periwinkle-60, #5051ae);
+}
+
+/* ==============***==============
+Set Password Success Page CSS
+==============***============== */
+
+.set-password-success-container {
+  padding-top: 100px;
+}
+
+.set-password-success-content {
+  padding: 42px 32px;
+  text-align: center;
+  background: var(--neutral-00, #fff);
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.05),
+    0px 12px 16px -4px rgba(16, 24, 40, 0.1),
+    0px 1px 0px 0px rgba(255, 255, 255, 0.6) inset;
+  border-radius: 12px;
+}
+
+.set-password-success-container .set-password-logo {
+  display: none;
+}
+
+.set-password-success-content h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000;
+  padding: 40px 0 10px;
+}
+
+.set-password-success-content p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.16px;
+  color: #000;
+}
+
+.sps-login-btn {
+  padding-top: 35px;
+}
+
+.sps-login-btn a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.16px;
+  color: var(--basics-white, #fff);
+  background: var(--secondary-periwinkle-60, #5051ae);
+  padding: 15px;
+  border-radius: 200px;
+}
+
+.sps-login-btn a img {
+  padding-left: 24px;
+}
+
+/* ==============***==============
+Password Reset Page CSS
+==============***============== */
+
+.back-to-login-btn {
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+.back-to-login-btn a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.14px;
+  color: var(--neutral-500, #8c8c8e);
+}
+
+.back-to-login-btn a img {
+  padding-right: 15px;
+}

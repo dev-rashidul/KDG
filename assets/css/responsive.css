@@ -23,4 +23,26 @@
   .login-buttons a {
     padding: 10px 0 10px 20px;
   }
+
+  .set-password-wrapper,
+  .password-reset-wrapper {
+    padding: 0 20px;
+  }
+
+  .set-password-form {
+    padding: 32px 20px;
+  }
+
+  .set-password-success-container {
+    padding-top: 0px;
+  }
+
+  .set-password-success-container .set-password-logo {
+    display: block;
+  }
+
+  .back-to-login-btn {
+    padding-top: 10px;
+    padding-left: 0;
+  }
 }
