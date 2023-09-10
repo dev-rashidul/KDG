@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KDG - Client Portal - Dashboard</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Dashboard Section HTML Start -->
+
+    <section id="Dashboard">
+      <div class="dashboard-wrapper">
+        <div class="dashboard-container">
+          <div id="Sidebar">
+            <div class="sidebar">
+              <div class="sidebar-logo">
+                <a href="#"><img src="assets/images/logo.svg" alt="logo" /></a>
+              </div>
+              <div class="sidebar-menu">
+                <ul>
+                  <li class="active">
+                    <img
+                      src="assets/images/dashboard-icon-active.svg"
+                      alt="dashboard-icon-active"
+                    />
+                    <a href="dashboard.html">Dashboard</a>
+                  </li>
+                  <li>
+                    <img
+                      src="assets/images/customer-icon.svg"
+                      alt="customer-icon"
+                    />
+                    <a href="customers.html">Customers</a>
+                  </li>
+                  <li>
+                    <img
+                      src="assets/images/payout-report-icon.svg"
+                      alt="payout-report-icon"
+                    /><a href="payout-report.html">Payout Report</a>
+                  </li>
+                  <li>
+                    <img
+                      src="assets/images/settings-icon.svg"
+                      alt="settings-icon"
+                    /><a href="settings.html">Settings</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="Dashboard-main">
+            <div id="Dashboard-header">
+              <div class="dashboard-header-wrapper">
+                <div class="dashboard-page-title"></div>
+                <div class="dashboard-header-left">
+                  <div id="bars">
+                    <img src="assets/images/bars-icon.svg" alt="bars-icon" />
+                  </div>
+                  <div class="dashboard-header-logo">
+                    <img src="assets/images/logo.svg" alt="logo" />
+                  </div>
+                </div>
+                <div class="dashboard-header-menu">
+                  <div class="dashboard-header-search">
+                    <img
+                      src="assets/images/search-icon.svg"
+                      alt="search-icon"
+                    />
+                    <input type="text" placeholder="Search" />
+                  </div>
+                  <div class="dashboard-header-notification">
+                    <a href="#"
+                      ><img src="assets/images/bell-icon.svg" alt="bell-icon"
+                    /></a>
+                  </div>
+                  <div id="dh_profile" class="dashboard-header-profile">
+                    <img
+                      src="assets/images/user-profile.png"
+                      alt="user-profile"
+                    />
+                    <div id="menu_profile" class="menu-profile">
+                      <ul>
+                        <li>
+                          <img
+                            src="assets/images/edit-icon.svg"
+                            alt="edit-icon"
+                          /><a href="#">Edit Contact Information</a>
+                        </li>
+                        <li>
+                          <img
+                            src="assets/images/logout-icon.svg"
+                            alt="logout-icon"
+                          /><a href="#">Log out</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dashboard Section HTML Start -->
+
+            <section id="Dashboard-content">
+              <div class="dashboard-conent">
+                <div class="dashboard-title">
+                  <h4>Welcome, <span>Kristen Watson!</span></h4>
+                </div>
+                <div class="payment-container">
+                  <div class="payment-card">
+                    <div class="payment-title">
+                      <h6>Total Invoiced</h6>
+                    </div>
+                    <div class="payment-amount">
+                      <h3>$42,321.53</h3>
+                      <p>
+                        <span class="increase"
+                          ><img
+                            src="assets/images/increase-icon.svg"
+                            alt="increase-icon"
+                          />15.38%</span
+                        >since last year
+                      </p>
+                    </div>
+                  </div>
+                  <div class="payment-card">
+                    <div class="payment-title">
+                      <h6>Total Paid</h6>
+                    </div>
+                    <div class="payment-amount">
+                      <h3>$36,450.12</h3>
+                      <p>
+                        <span class="increase"
+                          ><img
+                            src="assets/images/increase-icon.svg"
+                            alt="increase-icon"
+                          />16.67%</span
+                        >since last year
+                      </p>
+                    </div>
+                  </div>
+                  <div class="payment-card">
+                    <div class="payment-title">
+                      <h6>Pending</h6>
+                    </div>
+                    <div class="payment-amount">
+                      <h3>$8,630.28</h3>
+                      <p>
+                        <span class="increase"
+                          ><img
+                            src="assets/images/increase-icon.svg"
+                            alt="increase-icon"
+                          />11.4%</span
+                        >since last year
+                      </p>
+                    </div>
+                  </div>
+                  <div class="payment-card">
+                    <div class="payment-title">
+                      <h6>Overdue</h6>
+                    </div>
+                    <div class="payment-amount">
+                      <h3>$2,321.53</h3>
+                      <p>
+                        <span class="decrease"
+                          ><img
+                            src="assets/images/decrease-icon.svg"
+                            alt="decrease-icon"
+                          />7.14%</span
+                        >since last year
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="payout-invoice-container">
+                  <div class="payout-amount">
+                    <div class="payout-amount-top">
+                      <h6>Payout Amount</h6>
+                      <div class="view-report-btn">
+                        <a href="#">View Full Report</a>
+                      </div>
+                    </div>
+                    <div class="payout-amount-chart">
+                      <img src="assets/images/chart-img.png" alt="chart-img" />
+                    </div>
+                  </div>
+                  <div class="pending-invoice">
+                    <div class="pending-invoice-top">
+                      <h6>Pending Invoices</h6>
+                      <div class="view-all-btn">
+                        <a href="#">View All</a>
+                      </div>
+                    </div>
+                    <div
+                      class="pending-invoice-table pending-invoice-table-mobile"
+                    >
+                      <div class="pending-invoice-card">
+                        <div class="pending-invoice-user">
+                          <img
+                            src="assets/images/customer-avatar1.png"
+                            alt="customer-avatar1"
+                          />
+                          <span>Chantal Shelburne</span>
+                        </div>
+                        <div class="pending-invoice-info">
+                          <div class="pending-invoice-item">
+                            <span>Start Date</span>
+                            <h6>April 14, 2022</h6>
+                          </div>
+                          <div class="pending-invoice-item">
+                            <span>End Date</span>
+                            <h6>March 14, 2023</h6>
+                          </div>
+                          <div class="pending-invoice-item">
+                            <span>Pending Payout</span>
+                            <h6>$1,075.14</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pending-invoice-card">
+                        <div class="pending-invoice-user">
+                          <img
+                            src="assets/images/customer-avatar2.png"
+                            alt="customer-avatar2"
+                          />
+                          <span>Chantal Shelburne</span>
+                        </div>
+                        <div class="pending-invoice-info">
+                          <div class="pending-invoice-item">
+                            <span>Start Date</span>
+                            <h6>April 14, 2022</h6>
+                          </div>
+                          <div class="pending-invoice-item">
+                            <span>End Date</span>
+                            <h6>March 14, 2023</h6>
+                          </div>
+                          <div class="pending-invoice-item">
+                            <span>Pending Payout</span>
+                            <h6>$1,075.14</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pending-invoice-card">
+                        <div class="pending-invoice-user">
+                          <img
+                            src="assets/images/customer-avatar3.png"
+                            alt="customer-avatar3"
+                          />
+                          <span>Chantal Shelburne</span>
+                        </div>
+                        <div class="pending-invoice-info">
+                          <div class="pending-invoice-item">
+                            <span>Start Date</span>
+                            <h6>April 14, 2022</h6>
+                          </div>
+                          <div class="pending-invoice-item">
+                            <span>End Date</span>
+                            <h6>March 14, 2023</h6>
+                          </div>
+                          <div class="pending-invoice-item">
+                            <span>Pending Payout</span>
+                            <h6>$1,075.14</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pending-invoice-card">
+                        <div class="pending-invoice-user">
+                          <img
+                            src="assets/images/customer-avatar4.png"
+                            alt="customer-avatar4"
+                          />
+                          <span>Chantal Shelburne</span>
+                        </div>
+                        <div class="pending-invoice-info">
+                          <div class="pending-invoice-item">
+                            <span>Start Date</span>
+                            <h6>April 14, 2022</h6>
+                          </div>
+                          <div class="pending-invoice-item">
+                            <span>End Date</span>
+                            <h6>March 14, 2023</h6>
+                          </div>
+                          <div class="pending-invoice-item">
+                            <span>Pending Payout</span>
+                            <h6>$1,075.14</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pending-invoice-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Customers Name</th>
+                            <th>Start Date</th>
+                            <th>Expiration Date</th>
+                            <th>Pending Payout</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="flex">
+                              <img
+                                src="assets/images/customer-avatar1.png"
+                                alt="customer-avatar1"
+                              />
+                              <span>Chantal Shelburne</span>
+                            </td>
+                            <td>April 14, 2022</td>
+                            <td>March 14, 2023</td>
+                            <td>$1,075.14</td>
+                          </tr>
+                          <tr>
+                            <td class="flex">
+                              <img
+                                src="assets/images/customer-avatar2.png"
+                                alt="customer-avatar2"
+                              />
+                              <span>Savannah Nguyen</span>
+                            </td>
+                            <td>May 29, 2022</td>
+                            <td>May 29, 2023</td>
+                            <td>$2,321.53</td>
+                          </tr>
+                          <tr>
+                            <td class="flex">
+                              <img
+                                src="assets/images/customer-avatar3.png"
+                                alt="customer-avatar3"
+                              />
+                              <span>Kathryn Murphy</span>
+                            </td>
+                            <td>March 6, 2021</td>
+                            <td>December 19, 2022</td>
+                            <td>$1,223.12</td>
+                          </tr>
+                          <tr>
+                            <td class="flex">
+                              <img
+                                src="assets/images/customer-avatar4.png"
+                                alt="customer-avatar4"
+                              />
+                              <span>Bessie Cooper</span>
+                            </td>
+                            <td>February 28, 2021</td>
+                            <td>February 28, 2023</td>
+                            <td>$2,932.32</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Dashboard Section HTML End -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard Section HTML End -->
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      // JavaScript for Header
+
+      const bars = document.getElementById("bars");
+      const sidebar = document.getElementById("Sidebar");
+
+      bars.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+      });
+
+      // Menu Profile JavaScript
+
+      const dh_profile = document.getElementById("dh_profile");
+      const menu_profile = document.getElementById("menu_profile");
+
+      dh_profile.addEventListener("click", () => {
+        menu_profile.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

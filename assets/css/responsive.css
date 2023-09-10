@@ -1,3 +1,37 @@
+/* Dashboard Header Responsive */
+
+@media (min-width: 300px) and (max-width: 991px) {
+  #Sidebar {
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  #Sidebar.active {
+    left: 0;
+  }
+
+  #Dashboard-main {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .dashboard-header-left {
+    display: flex;
+  }
+
+  .dashboard-header-search {
+    display: none;
+  }
+
+  .dashboard-header-notification a img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
 /* Min Width 1200px and Max Width 1399px */
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -6,11 +40,37 @@
 /* Min Width 992px and Max Width 1199px */
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .payment-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
 }
 
 /* Min Width 768px and Max Width 991px */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .dashboard-page-title {
+    display: none;
+  }
+
+  .payment-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .payout-invoice-container {
+    flex-direction: column;
+  }
+
+  .payout-amount,
+  .pending-invoice {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .pending-invoice {
+    padding-top: 20px;
+  }
 }
 
 /* Min Width 300px and Max Width 767px */
@@ -29,6 +89,10 @@
     padding: 0 20px;
   }
 
+  .password-success-content {
+    padding: 42px 20px;
+  }
+
   .set-password-form {
     padding: 32px 20px;
   }
@@ -44,5 +108,137 @@
   .back-to-login-btn {
     padding-top: 10px;
     padding-left: 0;
+  }
+
+  /* Dashboard Page CSS */
+
+  .dashboard-header-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .pending-invoice-table {
+    display: none;
+  }
+
+  .pending-invoice-table-mobile {
+    display: block;
+  }
+
+  .dashboard-header-logo {
+    max-width: 96px;
+  }
+
+  .dashboard-title h4 {
+    font-size: 20px;
+  }
+
+  .payment-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .payout-invoice-container {
+    flex-direction: column;
+  }
+
+  .payout-amount,
+  .pending-invoice {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .pending-invoice {
+    padding-top: 20px;
+  }
+
+  .payment-card {
+    text-align: center;
+    padding: 16px 12px;
+  }
+
+  .payment-amount {
+    padding-top: 12px;
+  }
+
+  .payment-title h6 {
+    padding-bottom: 12px;
+  }
+
+  .payment-amount h3 {
+    font-size: 22px;
+  }
+
+  .payment-amount p {
+    font-size: 10px;
+  }
+
+  .payment-amount span {
+    font-size: 13px !important;
+  }
+
+  .payout-amount-chart {
+    min-height: 100%;
+  }
+
+  .pending-invoice {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .pending-invoice-top {
+    padding: 14px 20px 20px;
+  }
+
+  /* Customer List Page Responsive CSS */
+
+  .customer-list-table {
+    display: none;
+  }
+
+  .customer-list-table-mobile {
+    display: block;
+  }
+
+  /* Payout Report Responsive CSS */
+
+  .payout-report-list-table {
+    display: none;
+  }
+
+  .payout-report-list-table-mobile {
+    display: block;
+  }
+
+  /* Settings Page Responsive CSS */
+
+  .dashboard-page-title {
+    display: none;
+  }
+
+  .dashboard-contact,
+  .dashboard-contact-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-contact {
+    padding: 20px 0 80px;
+  }
+
+  .dashboard-contact-form {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .dashboard-contact-field > label {
+    padding-bottom: 6px;
+  }
+
+  .contact-update-btn {
+    padding-left: 0;
+  }
+
+  .contact-update-btn button {
+    max-width: 100%;
   }
 }

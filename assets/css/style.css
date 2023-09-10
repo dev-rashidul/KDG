@@ -1,19 +1,39 @@
 /* Base Style CSS Start */
 
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../font/Helvetica.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../font/Helvetica-Bold.ttf);
+  font-weight: 700;
+}
 
 /* Colors */
 
 :root {
   --primary-0005: #f2f2f2;
+  --primary-blue-20: #d9deee;
+  --blue-600: #1570ef;
+  --green-primary-400: #24a561;
+  --secondary-periwinkle-10: #ededf7;
   --secondary-periwinkle-60: #5051ae;
   --basics-white: #ffffff;
+  --neutral-50: #f9fafb;
+  --neutral-300: #d0d5dd;
+  --neutral-400: #98a2b3;
   --neutral-500: #8c8c8e;
   --neutral-700: #555458;
   --neutral-800: #37363b;
   --neutral-900: #1d1c21;
   --gray-200: #e4e7ec;
+  --Select-Employee: #f2f4f7;
 }
 
 * {
@@ -23,6 +43,7 @@
 }
 
 body {
+  /* font-family: "Inter", sans-serif; */
   font-family: "Manrope", sans-serif;
   scroll-behavior: smooth;
 }
@@ -390,7 +411,7 @@ Set Password Success Page CSS
   padding-top: 100px;
 }
 
-.set-password-success-content {
+.password-success-content {
   padding: 42px 32px;
   text-align: center;
   background: var(--neutral-00, #fff);
@@ -404,7 +425,7 @@ Set Password Success Page CSS
   display: none;
 }
 
-.set-password-success-content h5 {
+.password-success-content h5 {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
@@ -412,12 +433,21 @@ Set Password Success Page CSS
   padding: 40px 0 10px;
 }
 
-.set-password-success-content p {
+.password-success-content p {
   font-size: 16px;
   font-weight: 600;
   line-height: 160%;
   letter-spacing: 0.16px;
   color: #000;
+}
+
+.password-success-content > span {
+  display: block;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.14px;
+  color: var(--neutral-700, #555458);
+  padding-top: 20px;
 }
 
 .sps-login-btn {
@@ -462,4 +492,804 @@ Password Reset Page CSS
 
 .back-to-login-btn a img {
   padding-right: 15px;
+}
+
+/* ==============***==============
+Mail Sent Page CSS
+==============***============== */
+
+.mail-sent-logo {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* ==============***==============
+Dashboard Page CSS
+==============***============== */
+
+#Sidebar {
+  width: 240px;
+}
+
+.sidebar {
+  min-height: 100vh;
+  height: 100%;
+  background: #f9fafb;
+  padding: 20px 16px;
+  border-right: 1px solid var(--primary-blue-20, #d9deee);
+}
+
+.sidebar-logo {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.sidebar-menu ul li {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.sidebar-menu ul li.active {
+  color: var(--secondary-periwinkle-60, #5051ae);
+  background: var(--secondary-periwinkle-10, #ededf7);
+}
+
+.sidebar-menu ul li img {
+  padding-right: 17px;
+}
+
+.sidebar-menu ul li a {
+  display: block;
+  font-family: Helvetica;
+  font-size: 14px;
+  color: var(--neutral-400, #98a2b3);
+}
+
+.sidebar-menu ul li.active a {
+  color: var(--secondary-periwinkle-60, #5051ae);
+}
+
+.dashboard-container {
+  display: flex;
+}
+
+.dashboard-header-wrapper {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--primary-blue-20, #d9deee);
+}
+
+.dashboard-page-title h6 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--neutral-900, #101828);
+}
+
+#Dashboard-main {
+  width: calc(100% - 240px);
+  padding: 16px 40px;
+}
+
+.dashboard-header-left {
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+#bars {
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.dashboard-header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.dashboard-header-search {
+  max-width: 290px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 200px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+
+.dashboard-header-search input {
+  padding-left: 8px;
+  background: transparent;
+  border: none;
+}
+
+.dashboard-header-search input:focus {
+  outline: 0;
+}
+
+.dashboard-header-search input::placeholder {
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  color: var(--neutral-400, #a7a6a8);
+}
+
+.dashboard-header-notification {
+  margin: 0 28px;
+}
+
+.dashboard-header-notification a img {
+  width: 30px;
+  height: 30px;
+}
+
+.dashboard-header-profile {
+  position: relative;
+}
+
+.dashboard-header-profile img {
+  max-width: 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#menu_profile {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 334px;
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: 0px 17.40542px 20.88651px 0px rgba(0, 0, 0, 0.13),
+    0px 0px 0.69622px 0.69622px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  display: none;
+}
+
+#menu_profile.active {
+  display: block;
+}
+
+.menu-profile ul li {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.menu-profile ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.menu-profile ul li:last-child {
+  border-bottom: 0;
+}
+
+.menu-profile ul li a {
+  font-family: Inter;
+  font-size: 14px;
+  letter-spacing: -0.14px;
+  color: var(--neutral-800, #1d2939);
+}
+
+.dashboard-title h4 {
+  color: var(--neutral-700, #344054);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.dashboard-title h4 span {
+  font-weight: 500;
+  color: var(--neutral-900, #101828);
+}
+
+.payment-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 30px 0;
+}
+
+.payment-card {
+  border-radius: 10px;
+  border: 1px solid var(--primary-blue-20, #d9deee);
+  background: #fff;
+  padding: 24px 20px;
+}
+
+.payment-title h6 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.16px;
+  color: var(--neutral-900, #101828);
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4e7ec;
+}
+
+.payment-amount {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.payment-amount h3 {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: var(--neutral-800, #1d2939);
+  padding-bottom: 5px;
+}
+
+.payment-amount p {
+  font-family: Inter;
+  font-size: 14px;
+  letter-spacing: -0.14px;
+  color: var(--neutral-400, #98a2b3);
+}
+
+.payment-amount span.increase {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  padding-right: 5px;
+  color: var(--green-primary-400, #24a561);
+}
+
+.payment-amount span.decrease {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--warning-500, #f4a118);
+  padding-right: 5px;
+}
+
+.payout-invoice-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payout-amount,
+.pending-invoice {
+  max-width: 39%;
+  width: 100%;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid var(--primary-blue-20, #d9deee);
+  border-radius: 10px;
+}
+
+.payout-amount-top,
+.pending-invoice-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.payout-amount-top h6,
+.pending-invoice-top h6 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  color: var(--neutral-900, #101828);
+  margin: 0;
+}
+
+.view-report-btn a,
+.view-all-btn a {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 150%;
+  padding: 5px 8px;
+  color: var(--blue-600, #1570ef);
+  border: 1.6px solid var(--blue-600, #1570ef);
+  border-radius: 5px;
+}
+
+.payout-amount-chart {
+  min-height: 280px;
+  height: 100%;
+}
+
+.pending-invoice {
+  max-width: 59%;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+table thead {
+  background: var(--neutral-50, #f9fafb);
+}
+
+table thead tr th {
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0.11px;
+  text-transform: uppercase;
+  color: var(--gray-900, #101828);
+  padding: 10px 16px;
+  border-top: 1px solid var(--neutral-200, #e4e7ec) !important;
+  border-bottom: 1px solid var(--neutral-200, #e4e7ec) !important;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+tbody tr td {
+  font-family: Inter;
+  font-size: 13px;
+  letter-spacing: 0.13px;
+  color: var(--neutral-800, #1d2939);
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--neutral-200, #e4e7ec) !important;
+}
+
+tbody tr td img {
+  padding-right: 8px;
+}
+
+/* Mobiel Payment Invoice */
+
+.pending-invoice-table-mobile {
+  display: none;
+}
+
+.pending-invoice-card {
+  border-top: 1px solid #e4e7ec;
+  padding: 18px 14px 14px;
+}
+
+.pending-invoice-item {
+  position: relative;
+}
+
+.pending-invoice-item::after {
+  position: absolute;
+  content: "";
+  top: 9px;
+  right: -10px;
+  width: 1px;
+  height: 80%;
+  background: #d0d5dd;
+}
+
+.pending-invoice-item:last-child:after {
+  display: none;
+}
+
+.pending-invoice-user {
+  display: flex;
+  align-items: center;
+}
+
+.pending-invoice-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.pending-invoice-user img {
+  max-width: 30px;
+  width: 100%;
+  height: 30px;
+  margin-right: 8px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.pending-invoice-user span {
+  font-family: Inter;
+  font-size: 12px;
+  letter-spacing: 0.12px;
+  color: var(--neutral-800, #1d2939);
+}
+
+.pending-invoice-item span {
+  font-family: Inter;
+  font-size: 9px;
+  letter-spacing: 0.09px;
+  text-transform: uppercase;
+  color: var(--gray-500, #667085);
+}
+
+.pending-invoice-item h6 {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+  color: var(--neutral-800, #1d2939);
+}
+
+/* ============***============
+Settings Page CSS
+============***============ */
+
+.dashboard-contact {
+  padding-top: 40px;
+}
+
+.dashboard-settings-wrapper {
+  max-width: 730px;
+  width: 100%;
+}
+
+.dashboard-contact-info {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 6px;
+  background: var(--Select-Employee, #f2f4f7);
+}
+
+.dashboard-contact-info span {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  color: var(--neutral-600, #475467);
+}
+
+.dashboard-contact-info span img {
+  padding-right: 10px;
+}
+
+.dashboard-contact {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-profile-img {
+  width: 130px;
+  height: 130px;
+  margin-right: 30px;
+}
+
+.contact-profile-img img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.dashboard-contact-form {
+  width: calc(100% - 136px);
+}
+
+.dashboard-contact-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.dashboard-contact-field > label {
+  max-width: 110px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.14px;
+  padding-right: 12px;
+  color: var(--neutral-800, #1d2939);
+}
+
+.dashboard-contact-field input,
+.dashboard-contact-field select {
+  width: 100%;
+  font-size: 14px;
+  color: var(--neutral-400, #98a2b3);
+  padding: 11px 12px;
+  background: var(--basics-white, #fff);
+  border-radius: 6px;
+  border: 1px solid var(--neutral-300, #d0d5dd);
+}
+
+.dashboard-contact-field input:focus,
+.dashboard-contact-field select:focus {
+  outline: 0;
+}
+
+.dashboard-contact-form ::placeholder {
+  font-size: 14px;
+  color: var(--neutral-400, #98a2b3);
+}
+
+.file-upload-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: var(--neutral-400, #98a2b3);
+  background: var(--basics-white, #fff);
+  border: 1px solid var(--neutral-300, #d0d5dd);
+  border-radius: 6px;
+}
+
+input[type="file"] {
+  width: 130px;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.file-upload-field label {
+  display: flex;
+  align-items: center;
+  width: 130px;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  padding: 11px 12px;
+  margin-right: 12px;
+  color: var(--neutral-700, #344054);
+  background: var(--neutral-50, #f9fafb);
+  border-right: 1px solid var(--neutral-300, #d0d5dd);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.file-upload-field label img {
+  padding-left: 8px;
+}
+
+.contact-update-btn {
+  padding-left: 110px;
+}
+
+.contact-update-btn button {
+  max-width: 230px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.16px;
+  color: #fff;
+  background: var(--secondary-periwinkle-60, #5051ae);
+  padding: 15px;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.contact-update-btn button img {
+  padding-left: 15px;
+}
+
+/* ============***============
+Customer Page CSS
+============***============ */
+
+.customer-list-table {
+  border-left: 1px solid var(--primary-blue-20, #d9deee);
+  border-right: 1px solid var(--primary-blue-20, #d9deee);
+  border-radius: 10px;
+}
+
+.customer-list-table table thead tr th,
+.customer-list-table table tbody tr td {
+  padding: 16px 24px;
+}
+
+/* Customer List Mobile Table  */
+
+.customer-list-table-mobile {
+  display: none;
+}
+
+.customer-list-title h6,
+.payout-report-list-title h6 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  color: var(--neutral-900, #101828);
+  border-bottom: 1px solid var(--primary-blue-20, #d9deee);
+}
+
+.customer-info-card {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--primary-blue-20, #d9deee);
+}
+
+.customer-info-card-top {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--primary-blue-20, #d9deee);
+}
+
+.customer-info-card-top h6 {
+  color: var(--neutral-800, #1d2939);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  padding-bottom: 10px;
+}
+
+.customer-info-card-top span {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  color: var(--neutral-400, #98a2b3);
+  text-transform: uppercase;
+}
+
+.customer-info-card-top p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 12px;
+  color: var(--neutral-800, #1d2939);
+}
+
+.customer-service-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 12px;
+}
+
+.customer-service-info span {
+  color: var(--neutral-400, #98a2b3);
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 12px */
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.customer-service-info p {
+  color: var(--neutral-800, #1d2939);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 18.2px */
+  letter-spacing: 0.14px;
+}
+
+/* ============***============
+Payout Report Page CSS
+============***============ */
+
+.payout-report-list-table {
+  border-left: 1px solid var(--primary-blue-20, #d9deee);
+  border-right: 1px solid var(--primary-blue-20, #d9deee);
+  border-radius: 10px;
+}
+
+.payout-report-list-table table thead tr th,
+.payout-report-list-table table tbody tr td {
+  padding: 18px 24px;
+}
+
+.invoice-btn,
+.paid-btn,
+.overdue-btn,
+.pending-btn,
+.hold-btn {
+  font-family: Inter;
+  font-size: 12px;
+  letter-spacing: 0.12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.invoice-btn {
+  color: var(--indigo-600, #444ce7);
+  background: var(--indigo-50, #eef4ff);
+}
+
+.paid-btn {
+  color: var(--green-primary-500, #028942);
+  background: var(--green-primary-50, #e5f4ec);
+}
+
+.overdue-btn {
+  color: var(--error-600, #d92d20);
+  background: var(--error-50, #fef3f2);
+}
+
+.pending-btn {
+  color: var(--warning-600, #e49614);
+  background: var(--warning-50, #fff0d8);
+}
+
+.hold-btn {
+  color: var(--neutral-600, #475467);
+  background: var(--neutral-100, #f2f4f7);
+}
+
+/* Payout Table Mobile */
+
+.payout-report-list-table-mobile {
+  display: none;
+}
+
+.payout-report-list-container {
+  padding-top: 10px;
+}
+
+.payout-report-list-card {
+  padding: 25px 0;
+  border-bottom: 3px solid #f2f4f7;
+}
+
+.payout-report-list-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--neutral-200, #e4e7ec);
+}
+
+.payout-report-list-card-top h6 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  color: var(--neutral-600, #475467);
+}
+
+.payout-report-customer-top {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--neutral-200, #e4e7ec);
+}
+
+.payout-report-customer-top > span {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  color: var(--neutral-400, #98a2b3);
+}
+
+.payout-report-customer-top h6 {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  padding: 8px 0;
+  color: var(--neutral-800, #1d2939);
+}
+
+.payout-report-customer-name img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.payout-report-customer-name span {
+  font-family: Inter;
+  font-size: 13px;
+  letter-spacing: 0.13px;
+  color: var(--neutral-800, #1d2939);
 }

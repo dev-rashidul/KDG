@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KDG - Client Portal - Settings</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Dashboard Section HTML Start -->
+
+    <section id="Dashboard">
+      <div class="dashboard-wrapper">
+        <div class="dashboard-container">
+          <div id="Sidebar">
+            <div class="sidebar">
+              <div class="sidebar-logo">
+                <a href="#"><img src="assets/images/logo.svg" alt="logo" /></a>
+              </div>
+              <div class="sidebar-menu">
+                <ul>
+                  <li>
+                    <img
+                      src="assets/images/dashboard-icon.svg"
+                      alt="dashboard-icon"
+                    />
+                    <a href="dashboard.html">Dashboard</a>
+                  </li>
+                  <li>
+                    <img
+                      src="assets/images/customer-icon.svg"
+                      alt="customer-icon"
+                    />
+                    <a href="customers.html">Customers</a>
+                  </li>
+                  <li>
+                    <img
+                      src="assets/images/payout-report-icon.svg"
+                      alt="payout-report-icon"
+                    /><a href="payout-report.html">Payout Report</a>
+                  </li>
+                  <li class="active">
+                    <img
+                      src="assets/images/settings-icon-active.svg"
+                      alt="settings-icon-active"
+                    /><a href="settings.html">Settings</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="Dashboard-main">
+            <div id="Dashboard-header">
+              <div class="dashboard-header-wrapper">
+                <div class="dashboard-page-title">
+                  <h6>Contact Information</h6>
+                </div>
+                <div class="dashboard-header-left">
+                  <div id="bars">
+                    <img src="assets/images/bars-icon.svg" alt="bars-icon" />
+                  </div>
+                  <div class="dashboard-header-logo">
+                    <img src="assets/images/logo.svg" alt="logo" />
+                  </div>
+                </div>
+                <div class="dashboard-header-menu">
+                  <div class="dashboard-header-search">
+                    <img
+                      src="assets/images/search-icon.svg"
+                      alt="search-icon"
+                    />
+                    <input type="text" placeholder="Search" />
+                  </div>
+                  <div class="dashboard-header-notification">
+                    <a href="#"
+                      ><img src="assets/images/bell-icon.svg" alt="bell-icon"
+                    /></a>
+                  </div>
+                  <div id="dh_profile" class="dashboard-header-profile">
+                    <img
+                      src="assets/images/user-profile.png"
+                      alt="user-profile"
+                    />
+                    <div id="menu_profile" class="menu-profile">
+                      <ul>
+                        <li>
+                          <img
+                            src="assets/images/edit-icon.svg"
+                            alt="edit-icon"
+                          /><a href="#">Edit Contact Information</a>
+                        </li>
+                        <li>
+                          <img
+                            src="assets/images/logout-icon.svg"
+                            alt="logout-icon"
+                          /><a href="#">Log out</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dasboard Settings Section HTML Start -->
+
+            <section id="Dashboard-settings">
+              <div class="dashboard-settings-wrapper">
+                <div class="dashboard-contact-info">
+                  <span
+                    ><img src="assets/images/info-icon.svg" alt="info-icon" />
+                    The contact information need to be approved by admin</span
+                  >
+                </div>
+                <div class="dashboard-contact">
+                  <div class="contact-profile-img">
+                    <img
+                      src="assets/images/profile-picture.png"
+                      alt="profile-picture"
+                    />
+                  </div>
+                  <div class="dashboard-contact-form">
+                    <form>
+                      <div class="dashboard-contact-field">
+                        <label>First Name</label>
+                        <input type="text" placeholder="First Name" required />
+                      </div>
+                      <div class="dashboard-contact-field">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Last Name" required />
+                      </div>
+                      <div class="dashboard-contact-field">
+                        <label>Display Name</label>
+                        <input
+                          type="text"
+                          placeholder="Display Name"
+                          required
+                        />
+                      </div>
+                      <div class="dashboard-contact-field">
+                        <label>Email</label>
+                        <input
+                          type="email"
+                          placeholder="Email Address"
+                          required
+                        />
+                      </div>
+                      <div class="dashboard-contact-field">
+                        <label>Company</label>
+                        <input
+                          type="text"
+                          placeholder="Company Name"
+                          required
+                        />
+                      </div>
+                      <div class="dashboard-contact-field">
+                        <label>Address</label>
+                        <input
+                          type="text"
+                          placeholder="Your address, street, number"
+                          required
+                        />
+                      </div>
+                      <div class="dashboard-contact-field">
+                        <label>State</label>
+                        <select>
+                          <option value="Select State">Select State</option>
+                          <option value="New York">New York</option>
+                          <option value="California">California</option>
+                        </select>
+                      </div>
+                      <div class="dashboard-contact-field">
+                        <label>City</label>
+                        <select>
+                          <option value="Select City">Select City</option>
+                          <option value="New York">New York</option>
+                          <option value="California">California</option>
+                        </select>
+                      </div>
+                      <div class="dashboard-contact-field">
+                        <label>Zip Code</label>
+                        <input type="text" placeholder="Zip Code" required />
+                      </div>
+                      <div class="dashboard-contact-field">
+                        <label>Upload W-9</label>
+                        <div class="file-upload-field">
+                          <input type="file" accept="image/*" required />
+                          <label for="file"
+                            >Browse File
+                            <img
+                              src="assets/images/upload-icon.svg"
+                              alt="upload-icon"
+                          /></label>
+                          <span>W-9 File</span>
+                        </div>
+                      </div>
+                      <div class="contact-update-btn">
+                        <button type="submit">
+                          Update
+                          <img
+                            draggable="false"
+                            src="assets/images/arrow-right-icon.svg"
+                            alt="arrow-right-icon"
+                          />
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Dasboard Settings Section HTML End -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard Section HTML End -->
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      // JavaScript for Header
+
+      const bars = document.getElementById("bars");
+      const sidebar = document.getElementById("Sidebar");
+
+      bars.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+      });
+
+      // Menu Profile JavaScript
+
+      const dh_profile = document.getElementById("dh_profile");
+      const menu_profile = document.getElementById("menu_profile");
+
+      dh_profile.addEventListener("click", () => {
+        menu_profile.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

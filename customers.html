@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KDG - Client Portal - Customers</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Dashboard Section HTML Start -->
+
+    <section id="Dashboard">
+      <div class="dashboard-wrapper">
+        <div class="dashboard-container">
+          <div id="Sidebar">
+            <div class="sidebar">
+              <div class="sidebar-logo">
+                <a href="#"><img src="assets/images/logo.svg" alt="logo" /></a>
+              </div>
+              <div class="sidebar-menu">
+                <ul>
+                  <li>
+                    <img
+                      src="assets/images/dashboard-icon.svg"
+                      alt="dashboard-icon"
+                    />
+                    <a href="dashboard.html">Dashboard</a>
+                  </li>
+                  <li class="active">
+                    <img
+                      src="assets/images/customer-icon-active.svg"
+                      alt="customer-icon-active"
+                    />
+                    <a href="customers.html">Customers</a>
+                  </li>
+                  <li>
+                    <img
+                      src="assets/images/payout-report-icon.svg"
+                      alt="payout-report-icon"
+                    /><a href="payout-report.html">Payout Report</a>
+                  </li>
+                  <li>
+                    <img
+                      src="assets/images/settings-icon.svg"
+                      alt="settings-icon"
+                    /><a href="settings.html">Settings</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="Dashboard-main">
+            <div id="Dashboard-header">
+              <div class="dashboard-header-wrapper">
+                <div class="dashboard-page-title">
+                  <h6>Customer List</h6>
+                </div>
+                <div class="dashboard-header-left">
+                  <div id="bars">
+                    <img src="assets/images/bars-icon.svg" alt="bars-icon" />
+                  </div>
+                  <div class="dashboard-header-logo">
+                    <img src="assets/images/logo.svg" alt="logo" />
+                  </div>
+                </div>
+                <div class="dashboard-header-menu">
+                  <div class="dashboard-header-search">
+                    <img
+                      src="assets/images/search-icon.svg"
+                      alt="search-icon"
+                    />
+                    <input type="text" placeholder="Search" />
+                  </div>
+                  <div class="dashboard-header-notification">
+                    <a href="#"
+                      ><img src="assets/images/bell-icon.svg" alt="bell-icon"
+                    /></a>
+                  </div>
+                  <div id="dh_profile" class="dashboard-header-profile">
+                    <img
+                      src="assets/images/user-profile.png"
+                      alt="user-profile"
+                    />
+                    <div id="menu_profile" class="menu-profile">
+                      <ul>
+                        <li>
+                          <img
+                            src="assets/images/edit-icon.svg"
+                            alt="edit-icon"
+                          /><a href="#">Edit Contact Information</a>
+                        </li>
+                        <li>
+                          <img
+                            src="assets/images/logout-icon.svg"
+                            alt="logout-icon"
+                          /><a href="#">Log out</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Customers Section HTML Start -->
+
+            <section id="Customers">
+              <div class="customers-wrapper">
+                <div class="customer-list-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Customers Name</th>
+                        <th>Services rate</th>
+                        <th>Start Date</th>
+                        <th>Expiration Date</th>
+                        <th>Wait period</th>
+                        <th>Pending Payout</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>NAW - Nationwide Corporation</td>
+                        <td>11.14%</td>
+                        <td>April 14, 2022</td>
+                        <td>March 14, 2023</td>
+                        <td>12 days</td>
+                        <td>$1,075.14</td>
+                      </tr>
+                      <tr>
+                        <td>Acme - Acme Corporation</td>
+                        <td>9.18%</td>
+                        <td>May 29, 2022</td>
+                        <td>May 29, 2023</td>
+                        <td>10 days</td>
+                        <td>$2,321.53</td>
+                      </tr>
+                      <tr>
+                        <td>Fcorp - Futures Enterprise</td>
+                        <td>10.20%</td>
+                        <td>March 6, 2021</td>
+                        <td>December 19, 2022</td>
+                        <td>14 days</td>
+                        <td>$1,223.12</td>
+                      </tr>
+                      <tr>
+                        <td>Tech - Technologies Co.</td>
+                        <td>12.32%</td>
+                        <td>February 28, 2021</td>
+                        <td>February 28, 2023</td>
+                        <td>10 days</td>
+                        <td>$2,932.32</td>
+                      </tr>
+                      <tr>
+                        <td>Delta - Delta Corporation</td>
+                        <td>11.14%</td>
+                        <td>April 14, 2022</td>
+                        <td>March 14, 2023</td>
+                        <td>12 days</td>
+                        <td>$1,075.14</td>
+                      </tr>
+                      <tr>
+                        <td>Base - Base Corporation</td>
+                        <td>9.18%</td>
+                        <td>May 29, 2022</td>
+                        <td>May 29, 2023</td>
+                        <td>10 days</td>
+                        <td>$2,321.53</td>
+                      </tr>
+                      <tr>
+                        <td>Alpha - Alpha Enterprise</td>
+                        <td>10.20%</td>
+                        <td>March 6, 2021</td>
+                        <td>December 19, 2022</td>
+                        <td>14 days</td>
+                        <td>$1,223.12</td>
+                      </tr>
+                      <tr>
+                        <td>Zeta - Zeta Enterprise</td>
+                        <td>12.32%</td>
+                        <td>February 28, 2021</td>
+                        <td>February 28, 2023</td>
+                        <td>10 days</td>
+                        <td>$2,932.32</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="customer-list-table-mobile">
+                  <div class="customer-list-title">
+                    <h6>Customer List</h6>
+                  </div>
+                  <div class="customer-info-card">
+                    <div class="customer-info-card-top">
+                      <h6>NAW - Nationwide Corporation</h6>
+                      <div class="flex">
+                        <span>Pending Payout</span>
+                        <p>$1,075.14</p>
+                      </div>
+                    </div>
+                    <div class="customer-service-info-container">
+                      <div class="customer-service-info">
+                        <span>service rate</span>
+                        <p>11.14%</p>
+                      </div>
+                      <div class="customer-service-info">
+                        <span>Start Date</span>
+                        <p>April 14, 2022</p>
+                      </div>
+                      <div class="customer-service-info">
+                        <span>Wait period</span>
+                        <p>12 days</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customer-info-card">
+                    <div class="customer-info-card-top">
+                      <h6>Acme - Acme Corporation</h6>
+                      <div class="flex">
+                        <span>Pending Payout</span>
+                        <p>$2,321.53</p>
+                      </div>
+                    </div>
+                    <div class="customer-service-info-container">
+                      <div class="customer-service-info">
+                        <span>service rate</span>
+                        <p>9.18%</p>
+                      </div>
+                      <div class="customer-service-info">
+                        <span>Start Date</span>
+                        <p>May 29, 2022</p>
+                      </div>
+                      <div class="customer-service-info">
+                        <span>Wait period</span>
+                        <p>10 days</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customer-info-card">
+                    <div class="customer-info-card-top">
+                      <h6>Fcorp - Futures Enterprise</h6>
+                      <div class="flex">
+                        <span>Pending Payout</span>
+                        <p>$1,223.12</p>
+                      </div>
+                    </div>
+                    <div class="customer-service-info-container">
+                      <div class="customer-service-info">
+                        <span>service rate</span>
+                        <p>10.20%</p>
+                      </div>
+                      <div class="customer-service-info">
+                        <span>Start Date</span>
+                        <p>March 6, 2021</p>
+                      </div>
+                      <div class="customer-service-info">
+                        <span>Wait period</span>
+                        <p>14 days</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customer-info-card">
+                    <div class="customer-info-card-top">
+                      <h6>Tech - Technologies Co.</h6>
+                      <div class="flex">
+                        <span>Pending Payout</span>
+                        <p>$2,932.32</p>
+                      </div>
+                    </div>
+                    <div class="customer-service-info-container">
+                      <div class="customer-service-info">
+                        <span>service rate</span>
+                        <p>12.32%</p>
+                      </div>
+                      <div class="customer-service-info">
+                        <span>Start Date</span>
+                        <p>February 28, 2021</p>
+                      </div>
+                      <div class="customer-service-info">
+                        <span>Wait period</span>
+                        <p>10 days</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customer-info-card">
+                    <div class="customer-info-card-top">
+                      <h6>Delta - Delta Corporation</h6>
+                      <div class="flex">
+                        <span>Pending Payout</span>
+                        <p>$1,075.14</p>
+                      </div>
+                    </div>
+                    <div class="customer-service-info-container">
+                      <div class="customer-service-info">
+                        <span>service rate</span>
+                        <p>11.14%</p>
+                      </div>
+                      <div class="customer-service-info">
+                        <span>Start Date</span>
+                        <p>April 14, 2022</p>
+                      </div>
+                      <div class="customer-service-info">
+                        <span>Wait period</span>
+                        <p>12 days</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Customers Section HTML End -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard Section HTML End -->
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      // JavaScript for Header
+
+      const bars = document.getElementById("bars");
+      const sidebar = document.getElementById("Sidebar");
+
+      bars.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+      });
+
+      // Menu Profile JavaScript
+
+      const dh_profile = document.getElementById("dh_profile");
+      const menu_profile = document.getElementById("menu_profile");
+
+      dh_profile.addEventListener("click", () => {
+        menu_profile.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
