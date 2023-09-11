@@ -1406,3 +1406,78 @@ Payout Report Page CSS
   letter-spacing: 0.13px;
   color: var(--neutral-800, #1d2939);
 }
+
+/* Customer Details CSS */
+
+.customer-details-wrapper {
+  max-width: 1030px;
+  width: 100%;
+  margin: auto;
+  border-radius: 8px;
+  padding-bottom: 50px;
+}
+
+.customer-info-wrapper {
+  padding-bottom: 30px;
+}
+
+.customer-details-top {
+  padding: 18px 30px;
+  border-bottom: 1px solid var(--neutral-300, #d0d5dd);
+}
+
+.customer-details-top h6 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.modal-cross-btn {
+  cursor: pointer;
+}
+
+.customer-company {
+  padding: 20px 0 18px;
+}
+
+.customer-company-logo {
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+}
+
+.customer-company-name h6 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--neutral-900, #101828);
+}
+
+.customer-company-card p {
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.66px;
+  text-transform: uppercase;
+  color: var(--neutral-800, #1d2939);
+}
+
+.customer-company-card h6 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 0;
+  color: var(--neutral-900, #101828);
+}
+
+.customer-company-card span {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--neutral-500, #667085);
+}
+
+.customer-details-card-container {
+  padding: 0 20px;
+}

@@ -27,8 +27,9 @@ notification_btn.addEventListener("click", () => {
 });
 
 notification_cross.addEventListener("click", () => {
-  notification.classList.remove("active");
+  notification.style.display = "none"
 });
+
 
 // Password Eye JavaScript
 
