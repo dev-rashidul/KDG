@@ -631,6 +631,119 @@ Dashboard Page CSS
   height: 30px;
 }
 
+#notification {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--basics-white, #ffffff);
+  transition: left 0.3s ease-in-out;
+  z-index: 99;
+}
+
+#notification.active {
+  left: 0;
+}
+
+#notification-cross {
+  cursor: pointer;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  display: flex;
+  align-items: self-start;
+}
+
+.notification-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--primary-blue-20, #d9deee);
+}
+
+.notification-title h6 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.notification-content {
+  padding: 0 20px 50px;
+}
+
+.notification-card {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.notification-card h6.notify-day {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--neutral-700, #344054);
+  padding-top: 20px;
+}
+
+.notification-card-content {
+  padding: 18px 0;
+}
+
+.noti-user-img {
+  max-width: 34px;
+  height: 34px;
+  padding-top: 18px;
+  margin-right: 12px;
+}
+
+.noti-user-img img {
+  max-width: 34px;
+  height: 34px;
+}
+
+.notification-card-content h6 {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.12px;
+  color: var(--neutral-800, #1d2939);
+}
+
+.notification-card-content p {
+  font-family: Inter;
+  font-size: 13px;
+  letter-spacing: -0.13px;
+  color: var(--neutral-600, #475467);
+  padding: 2px 0;
+}
+
+.notification-card-content p span.noti-user-name {
+  font-weight: 600;
+  color: var(--blue-500, #2e90fa);
+}
+
+.notification-card-content p span.noti-pay-status {
+  font-weight: 600;
+  color: var(--green-primary-400, #24a561);
+}
+
+.notification-card-content p span.noti-pending-status {
+  font-weight: 600;
+  color: var(--warning-500, #f4a118);
+}
+
+.notification-card-content > span {
+  font-family: Inter;
+  font-size: 11px;
+  color: var(--neutral-400, #98a2b3);
+}
+
+.notification-card-content span.noti-item-cross {
+  cursor: pointer;
+}
+
 .dashboard-header-profile {
   position: relative;
 }

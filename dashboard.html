@@ -74,10 +74,140 @@
                     />
                     <input type="text" placeholder="Search" />
                   </div>
-                  <div class="dashboard-header-notification">
+                  <div
+                    id="notification-btn"
+                    class="dashboard-header-notification"
+                  >
                     <a href="#"
                       ><img src="assets/images/bell-icon.svg" alt="bell-icon"
                     /></a>
+                    <div id="notification">
+                      <div class="notification-wrapper">
+                        <div class="notification-header flex justify-between">
+                          <div class="notification-title">
+                            <h6>Notifications</h6>
+                          </div>
+                          <div id="notification-cross">
+                            <span
+                              ><img
+                                draggable="false"
+                                src="assets/images/cross-dark-icon.svg"
+                                alt="cross-dark-icon"
+                            /></span>
+                          </div>
+                        </div>
+                        <div class="notification-content">
+                          <div class="notification-card">
+                            <h6 class="notify-day">Today</h6>
+                            <div class="align-start">
+                              <div class="noti-user-img">
+                                <img
+                                  src="assets/images/notification-user-img.png"
+                                  alt="notification-user-img"
+                                />
+                              </div>
+                              <div class="notification-card-content">
+                                <div class="flex justify-between">
+                                  <h6>New Connection</h6>
+                                  <span class="noti-item-cross"
+                                    ><img
+                                      src="assets/images/cross-light-icon.svg"
+                                      alt=""
+                                  /></span>
+                                </div>
+                                <p>
+                                  <span class="noti-user-name"
+                                    >Bessie Cooper</span
+                                  >
+                                  is new customer linked to you!
+                                </p>
+                                <span>03/27/2020 4:03PM</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-card">
+                            <h6 class="notify-day">Yesterday</h6>
+                            <div class="align-start">
+                              <div class="noti-user-img">
+                                <img
+                                  src="assets/images/notification-invoice-icon.svg"
+                                  alt="notification-invoice-icon"
+                                />
+                              </div>
+                              <div class="notification-card-content">
+                                <div class="flex justify-between">
+                                  <h6>Invoice Paid</h6>
+                                  <span class="noti-item-cross"
+                                    ><img
+                                      src="assets/images/cross-light-icon.svg"
+                                      alt=""
+                                  /></span>
+                                </div>
+                                <p>
+                                  Your payment has been received!The status of
+                                  Invoice number #321234 is
+                                  <span class="noti-pay-status">Paid</span>.
+                                </p>
+                                <span>03/27/2020 4:03PM</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-card">
+                            <div class="align-start">
+                              <div class="noti-user-img">
+                                <img
+                                  src="assets/images/notification-invoice-icon.svg"
+                                  alt="notification-invoice-icon"
+                                />
+                              </div>
+                              <div class="notification-card-content">
+                                <div class="flex justify-between">
+                                  <h6>Invoice Pending</h6>
+                                  <span class="noti-item-cross"
+                                    ><img
+                                      src="assets/images/cross-light-icon.svg"
+                                      alt=""
+                                  /></span>
+                                </div>
+                                <p>
+                                  The status of Invoice number #321234 is
+                                  <span class="noti-pending-status"
+                                    >Pending</span
+                                  >. Your payment is on the way, awaiting
+                                  confirmation.
+                                </p>
+                                <span>03/27/2020 4:03PM</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notification-card">
+                            <div class="align-start">
+                              <div class="noti-user-img">
+                                <img
+                                  src="assets/images/payout-alert-icon.svg"
+                                  alt="payout-alert-icon"
+                                />
+                              </div>
+                              <div class="notification-card-content">
+                                <div class="flex justify-between">
+                                  <h6>Payout Alert</h6>
+                                  <span class="noti-item-cross"
+                                    ><img
+                                      src="assets/images/cross-light-icon.svg"
+                                      alt=""
+                                  /></span>
+                                </div>
+                                <p>
+                                  Exciting news! Your payout for this period has
+                                  been released. Keep up the great work!
+                                </p>
+                                <span>03/27/2020 4:03PM</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div id="dh_profile" class="dashboard-header-profile">
                     <img
@@ -370,25 +500,5 @@
 
     <!-- Custom JavaScript -->
     <script src="assets/js/script.js"></script>
-
-    <script>
-      // JavaScript for Header
-
-      const bars = document.getElementById("bars");
-      const sidebar = document.getElementById("Sidebar");
-
-      bars.addEventListener("click", () => {
-        sidebar.classList.toggle("active");
-      });
-
-      // Menu Profile JavaScript
-
-      const dh_profile = document.getElementById("dh_profile");
-      const menu_profile = document.getElementById("menu_profile");
-
-      dh_profile.addEventListener("click", () => {
-        menu_profile.classList.toggle("active");
-      });
-    </script>
   </body>
 </html>

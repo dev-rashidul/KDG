@@ -1,3 +1,35 @@
+// JavaScript for Header
+
+const bars = document.getElementById("bars");
+const sidebar = document.getElementById("Sidebar");
+
+bars.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+});
+
+// Menu Profile JavaScript
+
+const dh_profile = document.getElementById("dh_profile");
+const menu_profile = document.getElementById("menu_profile");
+
+dh_profile.addEventListener("click", () => {
+  menu_profile.classList.toggle("active");
+});
+
+// JavaScript For Notification
+
+const notification_btn = document.getElementById("notification-btn");
+const notification = document.getElementById("notification");
+const notification_cross = document.getElementById("notification-cross");
+
+notification_btn.addEventListener("click", () => {
+  notification.classList.add("active");
+});
+
+notification_cross.addEventListener("click", () => {
+  notification.classList.remove("active");
+});
+
 // Password Eye JavaScript
 
 const eye = document.querySelector(".eye");
